@@ -1,39 +1,4 @@
-<?php
 
-function curPageURL() {
- $pageURL = 'http';
- $pageURL .= "://";
- if ($_SERVER["SERVER_PORT"] != "80") {
-  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
- } else {
-  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
- }
- return $pageURL;
-}
-
-// $highlight = "";
-if (strpos(curPageURL(), "index")) { ?>
-	<style>.home_tab {color: red;}</style>
-<?php } elseif (strpos(curPageURL(), "people")) { ?>
-	<style>.people_tab {color: red;}</style>
-<?php } elseif (strpos(curPageURL(), "work")) { ?>
-	<style>.work_tab {color: red;}</style>
-<?php } elseif (strpos(curPageURL(), "interests")) { ?>
-	<style>.interests_tab {color: red;}</style>
-<?php } elseif (strpos(curPageURL(), "about")) { ?>
-	<style>.about_tab {color: red;}</style>
-<?php } ?>
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>G$'s Website</title>
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-		
-	</head>
-	<body>
 		<header>
 			<div class="header-container">
 				<img class="profile-pic" src="images/profile-pic.jpg" alt="profile pic" />

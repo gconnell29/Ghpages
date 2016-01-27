@@ -1,25 +1,16 @@
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>G$'s Website</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		
+	</head>
+	<body>
 <section class="index pages">
-	<?php
 
-
-	$_SESSION['username'] = "";
-	$alt_login = "";
-
-	if(isset($_POST['login_btn'])) {
-		session_start();
-		include ('connection.php');
-
-		$_SESSION['username'] = $_POST['email'];
-		$alt_login = "Not your account?";
-	}
-		// print_r($_POST['login_btn']);
-
-	if(isset($_POST['logout_btn'])) {
-		$_SESSION['username'] = "";
-		$alt_login = "";
-	}
-	?>
 <div id="header"></div>
 	<h1>Welcome <span><?= $_SESSION['username'] ?></span></h1>
 	<p class="intro">Thank you for visiting my website. This is my first website I developed as a showcase for my current skillset in webdevelopment. Here you will find a lot of information about me, my friends, my hobbies and of course my gaming community. Feel free to snoop around and click on as many things as posisble.</p>
@@ -61,3 +52,5 @@
 		$("#footer").load("footer.html");
 	});
 </script>
+	</body>
+</html>
