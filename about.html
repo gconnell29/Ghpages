@@ -1,4 +1,4 @@
-<?php include ('header.php'); ?>
+<div id="header"></div>
 
 <section id="about" class="pages">
 	<h1>Who is G$?</h1>
@@ -12,4 +12,17 @@
 	</ul>
 </section>
 
-<?php include ('footer.php'); ?>
+<div id="footer"></div>
+
+<script src="scripts/jquery-1.11.3.js" type=""></script>
+<script src="scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+	});
+</script>
+
+</body>
+</html>
