@@ -73,11 +73,11 @@ header nav {
 
 header nav li {
 	display: inline-block;
-	width: 110px;
+	width: 170px;
 	height: 35px;
 	padding-top: 10px;
-	padding-right: 50px;
-	margin-right: 50px;
+	/*padding-right: 50px;*/
+	/* margin-right: 50px; */
 	font-size: 22px;
 	font-weight: bold;
 	list-style: none;
@@ -91,13 +91,13 @@ header nav li:last-child {
 	border: none;
 }
 
-header nav li:hover {
+header nav li a:hover {
 	font-size: 25px;
 	text-decoration: underline;
 }
 
-nav .highlight {
-	color: pink;
+nav .active {
+	color: #ff0000;
 }
 
 footer {
@@ -111,7 +111,7 @@ footer {
 .pages {
 	padding: 20px 0;
 	max-width: 1024px;
-	min-height: 400px;
+	min-height: 280px;
 	margin: 0 auto;
 }
 
