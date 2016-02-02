@@ -9,15 +9,15 @@ $( document ).ready(function() {
 	// nav tab color
 	var tabs = ["index.html", "people.html", "work.html", "interests.html", "about.html"];
 
-	if (window.location.pathname == "/gmoney-c/" + tabs[0]) {
+	if (window.location.pathname == "/gmoney/" + tabs[0]) {
 		$(".home_tab").addClass("active");
-	} else if (window.location.pathname == "/gmoney-c/" + tabs[1]) {
+	} else if (window.location.pathname == "/gmoney/" + tabs[1]) {
 		$(".people_tab").addClass("active");
-	} else if (window.location.pathname == "/gmoney-c/" + tabs[2]) {
+	} else if (window.location.pathname == "/gmoney/" + tabs[2]) {
 		$(".work_tab").addClass("active");
-	} else if (window.location.pathname == "/gmoney-c/" + tabs[3]) {
+	} else if (window.location.pathname == "/gmoney/" + tabs[3]) {
 		$(".interests_tab").addClass("active");
-	} else if (window.location.pathname == "/gmoney-c/" + tabs[4]) {
+	} else if (window.location.pathname == "/gmoney/" + tabs[4]) {
 		$(".about_tab").addClass("active");
 	} else {
 		$(".home_tab").addClass("active");
