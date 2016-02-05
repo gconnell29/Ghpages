@@ -1,3 +1,14 @@
+/*
+Theme Name: gtheme
+Author: Gordon Connell
+Author URI: https://www.facebook.com/Gspesh
+Version: 1.0
+*/
+
+* {
+	font-family: helvetica;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -6,7 +17,7 @@ body {
 ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	/*list-style: none;*/
 }
 
 a {
@@ -14,357 +25,340 @@ a {
 	text-decoration: none;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4, p {
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	min-height: 200px;
-	background: teal;
-}
-
-.header-container {
-	padding: 10px 0;
-	position: relative;
-	max-width: 1024px;
-	margin: 0 auto;
-}
-
-header .profile-pic {
-	width: 30%;
-	border-radius: 10%;
-	cursor: pointer;
-	vertical-align: middle;
-}
-
-header .phrases {
-	display: inline-block;
-	width: 280px;
-	height: 100px;
-	font-size: 42px;
-	background-image: url('../images/word-bubble.png');
-	background-size: 100% 100%;
-	vertical-align: middle;
-}
-
-.phrases p {
-	padding-left: 70px;
-	margin: 20px 0 0;
-}
-
-.header-content {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	top: 30px;
-}
-
-header .name {
-	font-size: 171px;
-	color: gold;
+	background: #000;
+	color: #fff;
 }
 
 header nav {
-	margin: 30px 0 0px;
-	text-align: center;
-	color: gold;
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+header nav img {
+	width: 70px!important;
+	height: auto;
 }
 
 header nav li {
 	display: inline-block;
-	width: 170px;
-	height: 35px;
-	padding-top: 10px;
-	/*padding-right: 50px;*/
-	/* margin-right: 50px; */
-	font-size: 22px;
+	padding: 0px 15px;
+	margin: 20px 0px;
+	font-size: 26px;
 	font-weight: bold;
 	list-style: none;
-	border-right: 1px solid gold;
+	border-right: 1px solid #fff;
 	vertical-align: middle;
-}
-
-header nav li:last-child {
-	margin-right: 0;
-	padding-right: 0;
-	border: none;
+	text-align: center;
 }
 
 header nav li a:hover {
-	font-size: 25px;
-	text-decoration: underline;
+	color: #add8e6;
+}
+
+.home_tab a:hover {
+	color: #FFD700;
+}
+
+.home_tab {
+	position: absolute;
+	top: -15px;
+	left: 0;
+	padding: 0;
+	width: initial;
+	border: none;
+	font-size: 50px;
+	color: #FFD700;
+}
+
+header nav li:last-child {
+	border: none;
 }
 
 nav .active {
-	color: #ff0000;
+	color: #add8e6;
 }
 
 footer {
-	padding-top: 50px;
-	height: 200px;
-	text-align: center;
+	padding-top: 20px;
+	min-height: 100px;
 	color: #fff;
 	background: #000;
 }
 
-.pages {
-	padding: 20px 0;
-	max-width: 1024px;
-	min-height: 280px;
+.footer_container {
+	max-width: 800px;
 	margin: 0 auto;
 }
 
-.index h1 {
-	font-size: 30px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.index h1 span {
-	color: red;
-}
-
-.index .intro {
-	font-size: 18px;
-}
-
-.index h2 {
-	margin-bottom: 20px;
-}
-
-.index .form_container {
+footer nav {
 	display: inline-block;
-	min-width: 360px;
-	font-size: 18px;
-	vertical-align: top;
 }
 
-.index .form_tab:hover {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-.index .form_tab {
-	font-size: 22px;
-	font-weight: bold;
-}
-
-.index form {
-	display: none;
-	line-height: 170%;
-}
-
-.index form span {
-	display: inline-block;
-	width: 100px;
-}
-
-.index form button {
-	display: block;
-	margin-top: 10px;
-}
-
-.logout_btn {
-	display: inline-block!important;
-}
-
-.bio {
-	margin-bottom: 30px;
-	font-size: 1em;
-	line-height: 150%;
-}
-
-.hobby_list {
-	margin-left: 20px;
-	line-height: 150%;
-}
-
-/*START PEOPLE PAGE*/
-#people_page aside {
-	display: inline-block;
-	width: 17%;
-	margin-right: 2%;
-	vertical-align: top;
-}
-
-#people_page .aside {
-	padding: 10px;
-	border: 2px solid red;
-}
-
-aside .heading {
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-aside .outter_list {
-	margin-top: 10px;
+footer nav p,
+footer ul p {
+	padding-bottom: 8px;
 	font-size: 20px;
-	font-weight: bold;
 }
 
-aside .inner_list {
-	margin-left: 20px;
+footer nav .top_jump {
+	width: 20px;
+	vertical-align: bottom;
 }
 
-aside .inner_list li:hover {
-}
-
-.inner_list ul {
+footer li {
 	display: inline-block;
-	list-style: initial;
 }
 
-#people_page main {
+footer img {
+	width: 30px;
+}
+
+footer .media_icons {
 	display: inline-block;
-	width: 80%;
+	float: right;
+}
+
+footer .copyright {
+	text-align: center;
+}
+
+.pages {
 	position: relative;
+	padding: 10px 20px;
+	max-width: 780px;
+	margin: 0 auto;
+	/*min-height: 740px;*/
 }
 
-#people_page h1 {
-	margin-bottom: 10px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 25px;
-	color: blue;
+.index {
+	padding: 0;
 }
 
-.immediate_row {
-	padding: 10px;
-	margin-bottom: 10px;
-	border: 1px solid blue;
-}
-
-.immediate_row .name {
-	margin-bottom: 10px;
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.immediate_row .name span {
-	text-decoration: underline;
-}
-
-.immediate_row img {
-	width: 35%;
-	margin-right: 2%;
-}
-
-.immediate_row .content {
-	display: inline-block;
-	width: 60%;
-	line-height: 150%;
-	vertical-align: top;
-}
-
-.immediate_row article {
-	height: 170px;
-	overflow-y: scroll;
-}
-
-#people_page h2 {
-	margin: 30px 0 10px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 25px;
-	color: green;
-}
-
-.distant_col {
-	display: inline-block;
-	padding: 10px;
-	width: 46%;
-	margin-right: 2%;
-	margin-bottom: 10px;
-	border: 1px solid green;
-}
-
-.distant_col:nth-child(even) {
-	margin-right: 0;
-}
-
-/*.distant_col:last-child {
-}
-*/
-.distant_col .name {
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.distant_col img {
-	width: 45%;
-	margin-right: 2%;
-	vertical-align: middle;
-}
-
-.distant_col .content {
-	display: inline-block;
-	width: 51%;
-	line-height: 150%;
-	vertical-align: middle;
-}
-
-.distant_col article {
-	height: 150px;
-	overflow-y: scroll;
-}
-
-.show_distant {
-	font-weight: bold;
-	cursor: pointer;
-	position: absolute;
-	right: 0;
-	padding: 10px;
-	background: green;
-	color: #fff;
-}
-
-.showless_distant {
-	display: none;
-}
-
-.more_distant {
-	display: none;
-	margin-top: 50px;
-}
-
-#people_page h3 {
-	margin: 30px 0 10px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 25px;
-	color: red;
-}
-
-.friends_row {
-	text-align: center;
-}
-
-.friends_col {
-	display: inline-block;
-	width: 29.3%;
-	padding: 10px;
-	margin-right: 1%;
-	margin-bottom: 20px;
-	vertical-align: top;
-	border: 1px solid red;
-}
-
-.friends_col:last-child {
-	margin-right: 0;
-}
-
-.friends_col .name {
-	margin-bottom: 10px;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.friends_col img {
+.profile-pic {
+	display: block;
 	width: 100%;
 }
 
-/*END PEOPLE PAGE*/
+.smash_slide {
+	width: 20%;
+	min-height: 400px;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+
+.skate_slide {
+	width: 20%;
+	min-height: 400px;
+	position: absolute;
+	right: 0;
+	top: 100px;
+}
+
+.smash_slide img,
+.skate_slide img {
+	display: none;
+	position: relative;
+	width: 100%;
+}
+
+.smash_slide img {
+	left: -100%;
+}
+
+.skate_slide img {
+	right: -100%;
+}
+
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*START HOBBIES PAGE*/
+#hobbies {
+	background: #fff;
+}
+
+.hobbies_left_to {
+	position: fixed;
+	top: 70px;
+	width: 230px;
+	right: 50%;
+	margin-right: 410px;
+}
+
+.hobbies_right_to {
+	position: fixed;
+	top: 70px;
+	width: 230px;
+	left: 50%;
+	margin-left: 410px;
+}
+
+.hobbies_left_to img,
+.hobbies_right_to img {
+	width: 100%;
+}
+
+#hobbies .heading {
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #0000ff;
+}
+
+.hobby_tabs {
+	padding-top: 3px;
+	text-align: center;
+}
+
+.hobby_tabs li {
+	display: inline-block;
+	padding: 2px 10px;
+	margin: 0 6px;
+	font-size: 25px;
+	background: lightgreen;
+	border-radius: 40px;
+}
+
+.hobby_tabs li:last-child {
+	border: none;
+}
+
+.hobby_tabs li:hover {
+	color: #ff0000;
+}
+
+#hobbies .intro {
+	padding: 13px 0 30px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 150%;
+}
+
+#hobbies h1,
+#hobbies h2 {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 30px;
+}
+
+.smash_intro {
+	padding: 5px 0 20px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 150%;
+}
+
+.smash_video {
+	display: block;
+	width: 90%;
+	height: 60%;
+	margin: 20px auto 10px;
+}
+
+.skate_intro {
+	padding: 5px 0 20px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 150%;
+}
+
+/*@media (min-width: 1100px) {
+	.hobbies_right_to,
+	.hobbies_left_to {
+		display: block;
+	}
+}*/
