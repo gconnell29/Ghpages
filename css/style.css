@@ -405,3 +405,27 @@ footer .media_icons {
 	text-align: center;
 	line-height: 150%;
 }
+/*END HOBBIES PAGE ----------------- */
+
+
+/*START WORK PAGE*/
+.work_content .project {
+	display: inline-block;
+	padding: 8px;
+	width: 30%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.work_content .project:nth-child(3n) {
+	margin-right: 0;
+}
+
+.work_content .project img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+
+/*END WORK PAGE ----------------- */
