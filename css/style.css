@@ -37,7 +37,7 @@ header {
 
 header nav {
 	position: relative;
-	max-width: 800px;
+	max-width: 1024px;
 	margin: 0 auto;
 	text-align: right;
 }
@@ -87,53 +87,64 @@ nav .active {
 }
 
 footer {
-	padding-top: 20px;
-	min-height: 100px;
+	/* padding: 20px 0; */
+	/* min-height: 60px; */
 	color: #fff;
 	background: #000;
 }
 
 .footer_container {
-	max-width: 800px;
+	position: relative;
+	padding: 20px 0;
+	max-width: 1024px;
+	/* min-height: 50px; */
 	margin: 0 auto;
 }
 
-footer nav {
+.footer_content {
 	display: inline-block;
+	padding-top: 5px;
 }
 
-footer nav p,
-footer ul p {
-	padding-bottom: 8px;
-	font-size: 20px;
-}
-
-footer nav .top_jump {
+footer .top_jump {
 	width: 20px;
 	vertical-align: bottom;
+	border-radius: 10px;
 }
 
-footer li {
-	display: inline-block;
+.footer_content p {
+	/* margin-top: 15px; */
 }
 
-footer img {
-	width: 30px;
+.footer_content .copyright {
+	font-size: 18px;
+	font-weight: bold;
 }
 
 footer .media_icons {
 	display: inline-block;
-	float: right;
+	position: absolute;
+	right: 0;
 }
 
-footer .copyright {
+.media_icons p {
+	margin-bottom: 15px;
+	font-size: 20px;
 	text-align: center;
+}
+
+.media_icons li {
+	display: inline-block;
+}
+
+.media_icons img {
+	width: 30px;
 }
 
 .pages {
 	position: relative;
 	padding: 10px 20px;
-	max-width: 780px;
+	max-width: 1024px;
 	margin: 0 auto;
 	/*min-height: 740px;*/
 }
@@ -145,37 +156,6 @@ footer .copyright {
 .profile-pic {
 	display: block;
 	width: 100%;
-}
-
-.smash_slide {
-	width: 20%;
-	min-height: 400px;
-	position: absolute;
-	left: 0;
-	top: 100px;
-}
-
-.skate_slide {
-	width: 20%;
-	min-height: 400px;
-	position: absolute;
-	right: 0;
-	top: 100px;
-}
-
-.smash_slide img,
-.skate_slide img {
-	display: none;
-	position: relative;
-	width: 100%;
-}
-
-.smash_slide img {
-	left: -100%;
-}
-
-.skate_slide img {
-	right: -100%;
 }
 
 /* Wobble Horizontal */
@@ -264,25 +244,95 @@ footer .copyright {
   animation-iteration-count: 1;
 }
 
+.smash_slide {
+	width: 20%;
+	min-height: 370px;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	/* text-align: center; */
+}
+
+.skate_slide {
+	width: 20%;
+	min-height: 370px;
+	position: absolute;
+	right: 0;
+	top: 100px;
+	/* text-align: center; */
+}
+
+.smash_icon,
+.skate_icon {
+	display: none;
+	position: relative;
+	top: 50px;
+	width: 100%;
+}
+
+.smash_icon {
+	left: -100%;
+}
+
+.skate_icon {
+	right: -100%;
+}
+
+.smash_target {
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	text-align: center;
+}
+
+.smash_target:hover {
+	color: #ff0000;
+}
+
+.skate_target {
+	position: absolute;
+	bottom: 0;
+	right: 30%;
+	text-align: center;
+}
+
+.smash_target img,
+.skate_target img {
+	/*display: block;*/
+	position: initial;
+	width: 70px;
+	margin: 0 auto;
+}
+
+.left_red_arrow,
+.right_red_arrow {
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+
 /*START HOBBIES PAGE*/
 #hobbies {
 	background: #fff;
 }
 
 .hobbies_left_to {
+	display: none;
 	position: fixed;
 	top: 70px;
 	width: 230px;
 	right: 50%;
-	margin-right: 410px;
+	margin-right: 535px;
 }
 
 .hobbies_right_to {
+	display: none;
 	position: fixed;
 	top: 70px;
 	width: 230px;
 	left: 50%;
-	margin-left: 410px;
+	margin-left: 535px;
 }
 
 .hobbies_left_to img,
@@ -355,10 +405,3 @@ footer .copyright {
 	text-align: center;
 	line-height: 150%;
 }
-
-/*@media (min-width: 1100px) {
-	.hobbies_right_to,
-	.hobbies_left_to {
-		display: block;
-	}
-}*/
