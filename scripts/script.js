@@ -44,4 +44,30 @@ $( document ).ready(function() {
        $(".right_red_arrow").hide();      
     	$(".skate_icon").hide(500);
     });
+
+
+    //work page
+    var counter = 0;
+    var $project = $(".project");
+
+  $(".project").hover(function(){
+    $(".project").css({'opacity': .5});
+    $(this).css({'opacity': 1});
+    console.log('counter is zero');
+    counter = 0;
+  });
+
+
+  function countDown() {
+     setInterval(function(){
+        console.log('tick tock');
+        counter += 1;
+        if (counter === 5) {
+          clearInterval(countDown);
+          console.log('clearing interval timer');
+          $(".project").css({'opacity': 1});
+        }
+    },1000);
+  }
+
 });

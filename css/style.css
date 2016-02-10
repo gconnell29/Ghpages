@@ -7,6 +7,25 @@ Version: 1.0
 
 * {
 	font-family: helvetica;
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: calc(100% - 181px);
+  /* equal to footer height */
+  /*margin-bottom: -70px; */
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+}
+.site-footer {
+  height: 70px;
+  /*background: orange;*/
 }
 
 body {
@@ -31,6 +50,7 @@ h1,h2,h3,h4, p {
 }
 
 header {
+	padding: 0 20px;
 	background: #000;
 	color: #fff;
 }
@@ -87,8 +107,7 @@ nav .active {
 }
 
 footer {
-	/* padding: 20px 0; */
-	/* min-height: 60px; */
+	padding: 0 20px; 
 	color: #fff;
 	background: #000;
 }
@@ -409,23 +428,47 @@ footer .media_icons {
 
 
 /*START WORK PAGE*/
+#work .heading {
+	padding: 10px 0 5px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 2px solid #000;
+}
+
 .work_content .project {
 	display: inline-block;
 	padding: 8px;
 	width: 30%;
 	margin-right: 2%;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	border-radius: 10px;
+	text-align: center;
+	background: #f5f5f5;
 }
+
+/*.work_content .project:hover {
+	opacity: 1;
+	text-decoration: underline;
+	color: #0000ff;
+}*/
 
 .work_content .project:nth-child(3n) {
 	margin-right: 0;
 }
 
+.work_content .project div {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
 .work_content .project img {
 	display: block;
 	width: 100%;
-	border-radius: 10px;
+	height: 25%;
+	border-radius: 5px;
 }
 
 /*END WORK PAGE ----------------- */
