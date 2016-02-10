@@ -28,6 +28,13 @@ html, body {
   /*background: orange;*/
 }
 
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -446,13 +453,15 @@ footer .media_icons {
 	border-radius: 10px;
 	text-align: center;
 	background: #f5f5f5;
+	transition: 1s;
 }
 
-/*.work_content .project:hover {
-	opacity: 1;
+.work_content .project:hover {
+	opacity: 1!important;
 	text-decoration: underline;
 	color: #0000ff;
-}*/
+	transition-duration: 1s;
+}
 
 .work_content .project:nth-child(3n) {
 	margin-right: 0;
@@ -470,5 +479,6 @@ footer .media_icons {
 	height: 25%;
 	border-radius: 5px;
 }
+
 
 /*END WORK PAGE ----------------- */

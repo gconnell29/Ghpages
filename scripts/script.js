@@ -1,4 +1,13 @@
+// remove preload to allow css transitinos to fire
+$( window ).load(function() {
+  /*alert("removed preload class");
+  $('#work').removeClass("preload");*/
+});
+
 $( document ).ready(function() {
+  $('#work').removeClass("preload");
+  // alert("message 1");
+
   // nav tab color
   var tabs = ["index.html", "people.html", "work.html", "hobbies.html", "about.html"];
 
@@ -50,24 +59,28 @@ $( document ).ready(function() {
     var counter = 0;
     var $project = $(".project");
 
-  $(".project").hover(function(){
-    $(".project").css({'opacity': .5});
-    $(this).css({'opacity': 1});
-    console.log('counter is zero');
-    counter = 0;
-  });
 
+    $('.work_content').hover(function(){
+      $('.project').fadeTo(100, 0.33);
+    }, function(){
+      $('.project').fadeTo(100, 1);
+    });
 
-  function countDown() {
-     setInterval(function(){
-        console.log('tick tock');
-        counter += 1;
-        if (counter === 5) {
-          clearInterval(countDown);
-          console.log('clearing interval timer');
-          $(".project").css({'opacity': 1});
-        }
-    },1000);
-  }
+      /*$('.project').hover(function(){
+        $(this).css({
+          'opacity': 1,
+          'text-decoration': 'underline',
+          'color': '#0000ff',
+          'transition-duration': '1s'
+        });
+        }, function(){
+          $(this).css({
+            'opacity': 0.33,
+            'text-decoration': 'none',
+            'color': '#000',
+            'transition-duration': '1s'
+          });
+        });*/
 
 });
+
