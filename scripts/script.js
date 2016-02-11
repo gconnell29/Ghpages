@@ -66,21 +66,5 @@ $( document ).ready(function() {
       $('.project').fadeTo(100, 1);
     });
 
-      /*$('.project').hover(function(){
-        $(this).css({
-          'opacity': 1,
-          'text-decoration': 'underline',
-          'color': '#0000ff',
-          'transition-duration': '1s'
-        });
-        }, function(){
-          $(this).css({
-            'opacity': 0.33,
-            'text-decoration': 'none',
-            'color': '#000',
-            'transition-duration': '1s'
-          });
-        });*/
-
 });
 

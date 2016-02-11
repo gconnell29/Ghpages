@@ -28,13 +28,6 @@ html, body {
   /*background: orange;*/
 }
 
-.preload * {
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-ms-transition: none !important;
-	-o-transition: none !important;
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -138,10 +131,6 @@ footer .top_jump {
 	border-radius: 10px;
 }
 
-.footer_content p {
-	/* margin-top: 15px; */
-}
-
 .footer_content .copyright {
 	font-size: 18px;
 	font-weight: bold;
@@ -150,6 +139,7 @@ footer .top_jump {
 footer .media_icons {
 	display: inline-block;
 	position: absolute;
+	top: 18px;
 	right: 0;
 }
 
@@ -161,22 +151,32 @@ footer .media_icons {
 
 .media_icons li {
 	display: inline-block;
+	padding-left: 20px;
 }
 
 .media_icons img {
 	width: 30px;
 }
 
+
+/*START HOME PAGE*/
 .pages {
 	position: relative;
 	padding: 10px 20px;
 	max-width: 1024px;
 	margin: 0 auto;
-	/*min-height: 740px;*/
 }
 
 .index {
-	padding: 0;
+	padding: 20px 0 0;
+}
+
+.index .intro {
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+	line-height: 120%;
+	letter-spacing: 1px;
 }
 
 .profile-pic {
