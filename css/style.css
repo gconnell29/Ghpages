@@ -173,8 +173,7 @@ footer .media_icons {
 }
 
 .index .intro {
-	font-size: 18px;
-	/*font-family: arial;*/
+	font-size: 34px;
 	text-align: center;
 	line-height: 120%;
 	letter-spacing: 1px;
@@ -273,19 +272,19 @@ footer .media_icons {
 
 .smash_slide {
 	width: 20%;
-	min-height: 370px;
+	min-height: 430px;
 	position: absolute;
 	left: 0;
-	top: 100px;
+	top: 250px;
 	/* text-align: center; */
 }
 
 .skate_slide {
 	width: 20%;
-	min-height: 370px;
+	min-height: 430px;
 	position: absolute;
 	right: 0;
-	top: 100px;
+	top: 250px;
 	/* text-align: center; */
 }
 
