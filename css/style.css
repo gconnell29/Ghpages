@@ -69,7 +69,7 @@ header nav img {
 
 header nav li {
 	display: inline-block;
-	padding: 0px 15px;
+	padding: 0px 25px;
 	margin: 20px 0px;
 	font-size: 26px;
 	font-weight: bold;
@@ -81,6 +81,7 @@ header nav li {
 
 header nav li a:hover {
 	color: #add8e6;
+	transition-duration: .5s;
 }
 
 .home_tab a:hover {
@@ -350,7 +351,11 @@ footer .media_icons {
 }
 
 #about .heading {
-	text-align: right;
+	padding: 20px 0;
+	max-width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+	border: none;
 }
 
 .work_content .project {
@@ -402,9 +407,12 @@ footer .media_icons {
 
 /*START ABOUT PAGE*/
 #about .row {
-	padding-bottom: 10px;
-	margin-bottom: 50px;
-	border-bottom: 1px solid;
+	padding: 30px 0;
+}
+
+#about .container{
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 #about .content {
@@ -415,8 +423,10 @@ footer .media_icons {
 }
 
 #about .sub_heading {
-	font-size: 30px;
 	padding-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 #about .content p {
@@ -430,6 +440,26 @@ footer .media_icons {
 	vertical-align: middle;
 }
 
+#about .row:nth-child(even) {
+	background-color: rgb(222, 222, 222);
+	-webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+#about .row:nth-child(odd) img {
+	width: 37%;
+	margin-right: 16%;
+}
+
+#about .row:nth-child(odd) .content {
+	margin-right: 0;
+}
+
+.smash_row .content {
+	margin-right: 6%!important;
+}
+
 .smash_title {
 	max-width: 70%!important;
 	text-align: center;
@@ -438,10 +468,10 @@ footer .media_icons {
 }
 
 .smash_video {
-	display: block;
-	width: 600px;
-	height: 338px;
-	margin: 20px auto 10px;
+	display: inline-block;
+	width: 47%;
+	height: 310px;
+	vertical-align: middle;
 }
 
 /*END ABOUT PAGE ----------------- */

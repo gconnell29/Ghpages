@@ -19,6 +19,10 @@ $( document ).ready(function() {
     $(".hobbies_tab").addClass("active");
   } else if (window.location.pathname == "/gmoney/" + tabs[4]) {
     $(".about_tab").addClass("active");
+  } else if (window.location.pathname == "/gmoney/" + tabs[4] + "#smash") {
+    $(".about_tab").addClass("active");
+  } else if (window.location.pathname == "/gmoney/" + tabs[4] + "#skate") {
+    $(".about_tab").addClass("active");
   };
 
 	$(".smash_slide").hover(function(){
