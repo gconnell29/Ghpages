@@ -60,9 +60,25 @@ $( document ).ready(function() {
 
 
     //WORK PAGE
-    var counter = 0;
-    var $project = $(".project");
 
+    var ul = $("<ul></ul>");
+
+    var data = [
+      'Created sleek designs with HTML/CSS',
+      'Created responsive designs for mobile',
+      'Lead front end development for all projects',
+      'Tested functionality across all browsers',
+      'Managed and collaborated codebases via Git',
+      'Formatted weekly email newsletters in html'
+    ];
+
+    for (var i = data.length - 1; i >= 0; i--) {
+      var li_list = $("<li></li>").html(data[i]);
+      ul.append(li_list);
+    };
+
+    $("#duties").prepend(ul);
+    
 
     $('.work_content').hover(function(){
       $('.project').fadeTo(100, 0.33);
@@ -90,8 +106,7 @@ $( document ).ready(function() {
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
-  });
+    });
 
 });
 

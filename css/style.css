@@ -5,8 +5,11 @@ Author URI: https://www.facebook.com/Gspesh
 Version: 1.0
 */
 
-p {
+* {
 	font-family: arial;
+}
+
+img {
   	margin: 0;
 }
 html, body {
@@ -30,15 +33,10 @@ html, body {
   height: 70px;
 }*/
 
-body {
+body,ul, p {
 	margin: 0;
 	padding: 0;
 	/*background-color: rgb(222, 222, 222);*/
-}
-
-ul {
-	margin: 0;
-	padding: 0;
 }
 
 a {
@@ -46,7 +44,7 @@ a {
 	text-decoration: none;
 }
 
-h1,h2,h3,h4, p {
+img {
 	margin: 0;
 	padding: 0;
 }
@@ -166,7 +164,7 @@ footer .media_icons {
 /*START HOME PAGE*/
 .pages {
 	position: relative;
-	padding: 10px 20px;
+	padding: 0px 20px 10px;
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -182,7 +180,7 @@ footer .media_icons {
 	letter-spacing: 1px;
 }
 
-.profile-pic {
+.index .profile-pic {
 	display: block;
 	width: 100%;
 }
@@ -344,17 +342,25 @@ footer .media_icons {
 
 /*START WORK PAGE*/
 .heading {
-	padding: 10px 0 5px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 	font-size: 40px;
 	font-weight: bold;
 	text-transform: uppercase;
-	/* border-bottom: 2px solid #000; */
 	text-align: center;
 }
 
+#work .row {
+	padding: 20px 0 30px;
+	margin-bottom: 30px;
+	background-color: rgb(240, 240, 240);
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: #dddddd solid 1px;
+}
+
 #work .sub_heading {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 30px;
 	font-weight: bold;
 	border-bottom: 1px solid;
@@ -364,20 +370,27 @@ footer .media_icons {
 	padding-bottom: 30px;
 	max-width: 800px;
 	margin: 0 auto;
-	font-size: 20px;
+	font-size: 28px;
 	text-align: center;
 }
 
-#work .duties span {
-	display: block;
-	padding-bottom: 10px;
-	font-size: 20px;
-	/*font-weight: bold;*/
-	letter-spacing: 1px;
+#work #duties {
+	/*padding-bottom: 30px;*/
 }
 
-#work .duties ul {
-	margin-left: 20px;
+#work #duties ul {
+	display: inline-block;
+	width: 60%;
+	margin-right: 10%;
+	font-size: 20px;
+	line-height: 180%;
+	letter-spacing: 1px;
+	vertical-align: middle;
+}
+
+#work #duties img {
+	width: 220px;
+	vertical-align: middle;
 }
 
 .work_content .project {
@@ -425,6 +438,44 @@ footer .media_icons {
 	line-height: 150%;
 }
 
+#hobbies h1 {
+	display: none;
+}
+
+.hobbies_title {
+	margin: 0 auto 30px;
+	display: block;
+	text-align: center;
+}
+
+.video_container {
+	padding: 10px 0;
+	margin-top: 30px;
+	background: #000;
+}
+
+.smash_video {
+	display: block;
+	margin: 0px auto;
+	width: 700px;
+	height: 400px;
+	vertical-align: middle;
+}
+
+.hobbies-pic {
+	float: left;
+	margin-right: 20px;
+	max-width: 400px;
+	border-radius: 30px;
+}
+
+#hobbies .content p {
+	display: inline;
+	font-size: 20px;
+	line-height: 150%;
+	vertical-align: top;
+}
+
 .skate-pic {
 	border-radius: 30px;
 }
@@ -436,7 +487,7 @@ footer .media_icons {
 	padding: 30px 0;
 }
 
-#about .container{
+.container{
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -541,25 +592,6 @@ footer .media_icons {
 #about .row:nth-child(odd) .content {
 	margin-right: 0;
 }
-
-.smash_row .content {
-	margin-right: 6%!important;
-}
-
-.smash_title {
-	max-width: 70%!important;
-	text-align: center;
-	margin: 0 auto;
-	display: block!important;
-}
-
-.smash_video {
-	display: inline-block;
-	width: 47%;
-	height: 310px;
-	vertical-align: middle;
-}
-
 /*END ABOUT PAGE ----------------- */
 
 
