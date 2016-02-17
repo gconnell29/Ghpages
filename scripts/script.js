@@ -25,6 +25,21 @@ $( document ).ready(function() {
     $(".about_tab").addClass("active");
   };
 
+
+  // mobile nav slider
+  // $('#simple-menu').sidr();
+
+  $('#simple-menu').sidr({
+    name: 'sidr-right',
+    side: 'right'
+  });
+
+  /*$('#existing-content-menu').sidr({
+    name: 'sidr-existing-content',
+    source: '#demoheader, #demo-content'
+  });
+*/
+
 	$(".smash_slide").hover(function(){
        $(".smash_icon").show();
        $(".smash_icon").animate({
@@ -72,13 +87,13 @@ $( document ).ready(function() {
       'Formatted weekly email newsletters in html'
     ];
 
-    for (var i = data.length - 1; i >= 0; i--) {
+    for (var i = 0; i < data.length; i++) {
       var li_list = $("<li></li>").html(data[i]);
       ul.append(li_list);
     };
 
     $("#duties").prepend(ul);
-    
+
 
     $('.work_content').hover(function(){
       $('.project').fadeTo(100, 0.33);
