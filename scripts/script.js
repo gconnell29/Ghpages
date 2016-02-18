@@ -11,17 +11,17 @@ $( document ).ready(function() {
   // nav tab color
   var tabs = ["index.html", "people.html", "work.html", "hobbies.html", "about.html"];
 
-  if (window.location.pathname == "/gmoney/" + tabs[1]) {
+  if (window.location.pathname == "/gordon/" + tabs[1]) {
     $(".people_tab").addClass("active");
-  } else if (window.location.pathname == "/gmoney/" + tabs[2]) {
+  } else if (window.location.pathname == "/gordon/" + tabs[2]) {
     $(".work_tab").addClass("active");
-  } else if (window.location.pathname == "/gmoney/" + tabs[3]) {
+  } else if (window.location.pathname == "/gordon/" + tabs[3]) {
     $(".hobbies_tab").addClass("active");
-  } else if (window.location.pathname == "/gmoney/" + tabs[4]) {
+  } else if (window.location.pathname == "/gordon/" + tabs[4]) {
     $(".about_tab").addClass("active");
-  } else if (window.location.pathname == "/gmoney/" + tabs[4] + "#smash") {
+  } else if (window.location.pathname == "/gordon/" + tabs[4] + "#smash") {
     $(".about_tab").addClass("active");
-  } else if (window.location.pathname == "/gmoney/" + tabs[4] + "#skate") {
+  } else if (window.location.pathname == "/gordon/" + tabs[4] + "#skate") {
     $(".about_tab").addClass("active");
   };
 
