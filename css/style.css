@@ -317,10 +317,6 @@ footer .media_icons {
 	text-align: center;
 }
 
-.smash_target:hover {
-	color: #ff0000;
-}
-
 .skate_target {
 	position: absolute;
 	bottom: 0;
@@ -463,6 +459,8 @@ footer .media_icons {
 	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 	border-bottom: #dddddd solid 1px;
 }
+
+#hobbies .sub_heading {padding-top: 20px;font-size: 40px;text-align: center;}
 
 .video_container {
 	padding: 10px 0;
@@ -776,7 +774,7 @@ footer .media_icons {
 @media only screen and (max-width: 600px) {
 	/*START WORK PAGE*/
 	#work #duties ul {
-		width: 100%!important;
+		width: 95%!important;
 		font-size: 1em;
 	}
 
@@ -803,6 +801,10 @@ footer .media_icons {
 		display: block;
 		width: 90%;
 		margin: 20px auto 0;
+	}
+
+	#hobbies .content .extra_blurb {
+		display: none;
 	}
 	/*END HOBBIES PAGE ----------------- */
 

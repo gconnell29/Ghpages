@@ -95,11 +95,19 @@ $( document ).ready(function() {
     $("#duties").prepend(ul);
 
 
-    $('.work_content').hover(function(){
-      $('.project').fadeTo(100, 0.33);
-    }, function(){
-      $('.project').fadeTo(100, 1);
-    });
+    if ($(window).width() >= 1025) {
+      $('.work_content').hover(function(){
+        $('.project').fadeTo(100, 0.33);
+      }, function(){
+        $('.project').fadeTo(100, 1);
+      });
+    } else if ($(window).width() <= 1025) {
+      $('.work_content').hover(function(){
+        // $('.project').fadeTo(100, 0.33);
+      }, function(){
+        // $('.project').fadeTo(100, 1);
+      });
+    };
 
 
     // ABOUT PAGE
