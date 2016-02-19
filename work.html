@@ -1,11 +1,78 @@
-<?php include ('header.php'); ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gordon - Portfolio</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet">
+		<link href="css/jquery.sidr.bare.css" rel="stylesheet">
+		<link href="css/jquery.sidr.dark.css" rel="stylesheet">
+		<link href="css/jquery.sidr.dark.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="header"></div>
 
-<section id="work" class="pages">
-	<?php 
-	session_start();
-	echo $_SESSION['username'];
-	?>
-	<p>This is the work page.</p>
-</section>
+		<div class="page-wrap">
+			<section id="work" class="">
+				<div class="heading">Portfolio</div>
+				<p class="work_intro">Welcome to my portfolio. Here you will find a history of my past work up until now. Click on an individual project to enlarge or click on the name to visit the actual site.</p>
+				
+				<div class="row">
+					<div class="container">
+						<div class="sub_heading">Past Projects</div>
+						
+						<div id="duties">
+							<img src="images/checklist.png" alt="checklist" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="work_content">
+						<div class="project">
+							<a target="_blank" href="//joonbug.com"><div>Joonbug.com</div></a>
+							<a href="images/joonbug.jpg" data-lightbox="image-1" data-title="joonbug.com"><img src="images/joonbug.jpg" alt="joonbug" /></a>
+						</div>
+						<div class="project">
+							<a target="_blank" href="http://lindypromo.com"><div>Lindypromo.com</div></a>
+							<a href="images/lindy1.jpg" data-lightbox="image-1" data-title="lindypromo.com"><img src="images/lindy1.jpg" alt="lindypromo" /></a>
+						</div>
+						<div class="project">
+							<a target="_blank" href="http://nyephilly.com"><div>NYEPhilly.com</div></a>
+							<a href="images/nyephilly.jpg" data-lightbox="image-1" data-title="nyephilly.com"><img src="images/nyephilly.jpg" alt="NyePhilly" /></a>
+						</div>
+						<div class="project">
+							<a target="_blank" href="http://downtowncountdown.net/"><div>Downtowncountdown.net</div></a>
+							<a href="images/downtown1.jpg" data-lightbox="image-1" data-title="downtowncountdown.net"><img src="images/downtown1.jpg" alt="downtown" /></a>
+						</div>
+						<div class="project">
+							<a target="_blank" href="http://timessquarenewyears.com"><div>Timessquarenewyears.com</div></a>
+							<a href="images/tsqny1.jpg" data-lightbox="image-1" data-title="timessquarenewyears.com"><img src="images/tsqny1.jpg" alt="tsqny" /></a>
+						</div>
+						<div class="project">
+							<div>Newsletters</div>
+							<a href="images/newsletter1.jpg" data-lightbox="image-1" data-title=""><img src="images/newsletter1.jpg" alt="newsletters" /></a>
+						</div>
+					</div> <!-- end work content -->
+				</div>
+			</section>
+		</div>
 
-<?php include ('footer.php'); ?>
+		<div id="footer"></div>
+
+		<script src="scripts/jquery-2.2.0.js" type=""></script>
+		<script src="scripts/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
+
+</body>
+</html>
