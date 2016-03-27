@@ -1,0 +1,31 @@
+/* @mixin pstyle() {
+	background: #eeeeee;
+	color: #777777;
+} */
+.container {
+  max-width: 1024px;
+  margin: 0 auto; }
+  .container h1 {
+    color: #0000bb;
+    text-align: center; }
+  .container h2 {
+    color: #0000bb;
+    text-align: center; }
+  .container h3 {
+    color: #0000bb;
+    text-align: center; }
+  .container h4 {
+    color: #0000bb;
+    text-align: center; }
+  .container h5 {
+    color: #0000bb;
+    text-align: center; }
+  .container .para3 a {
+    text-decoration: none;
+    color: #aa0000; }
+  .container .para3 a:hover {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #7D26CD; }
+
+/*# sourceMappingURL=practice.css.map */

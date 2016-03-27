@@ -1,12 +1,5 @@
-// remove preload to allow css transitinos to fire
-$( window ).load(function() {
-  /*alert("removed preload class");
-  $('#work').removeClass("preload");*/
-});
-
 $( document ).ready(function() {
   $('#work').removeClass("preload");
-  // alert("message 1");
 
   // nav tab color
   var tabs = ["index.html", "people.html", "work.html", "hobbies.html", "about.html"];
@@ -27,18 +20,11 @@ $( document ).ready(function() {
 
 
   // mobile nav slider
-  // $('#simple-menu').sidr();
-
   $('#simple-menu').sidr({
     name: 'sidr-right',
     side: 'right'
   });
 
-  /*$('#existing-content-menu').sidr({
-    name: 'sidr-existing-content',
-    source: '#demoheader, #demo-content'
-  });
-*/
 
 	$(".smash_slide").hover(function(){
        $(".smash_icon").show();

@@ -1,0 +1,61 @@
+$red:#aa0000;
+$blue:#0000bb;
+$green:#00cc00;
+$purple:#7D26CD;
+$tcenter: center;
+
+
+@mixin hStyle() {
+	color: $blue;
+ 	text-align: $tcenter; 
+}
+
+@mixin aStyle($red:#aa0000) {
+	text-decoration: none;
+	color:$red;
+}
+
+@mixin aHover($aColor:$purple) {
+	font-size: 20px;
+	text-decoration: underline;
+	color:$aColor;
+}
+
+/* @mixin pstyle() {
+	background: #eeeeee;
+	color: #777777;
+} */
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+
+	h1 {
+		@include hStyle;
+	}
+
+	h2 {
+		@include hStyle;
+	}
+
+	h3 {
+		@include hStyle;
+	}
+
+	h4 {
+		@include hStyle;
+	}
+
+	h5 {
+		@include hStyle;
+	}
+
+	.para3 {
+		a {
+			@include aStyle;
+		}
+		a:hover {
+			@include aHover();
+		}
+	}
+}
