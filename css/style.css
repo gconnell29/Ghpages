@@ -494,15 +494,11 @@ footer .media_icons {
 	vertical-align: top;
 }
 
-<<<<<<< HEAD
 .skate_row .hobbies-pic {
 	float: right;
 	margin-right: 0;
 	margin-left: 20px;
-=======
-.skate-pic {
 	border-radius: 30px;
->>>>>>> caf25af9f302664a5d98775ecb05a3c05bc5901a
 }
 /*END HOBBIES PAGE ----------------- */
 
@@ -798,11 +794,7 @@ footer .media_icons {
 	}
 
 	.hobbies-pic {
-<<<<<<< HEAD
 		float: initial!important;
-=======
-		float: initial;
->>>>>>> caf25af9f302664a5d98775ecb05a3c05bc5901a
 		display: block;
 		width: 80%;
 		margin: 0 auto;
