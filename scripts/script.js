@@ -1,5 +1,17 @@
+<<<<<<< HEAD
 $( document ).ready(function() {
   $('#work').removeClass("preload");
+=======
+// remove preload to allow css transitinos to fire
+$( window ).load(function() {
+  /*alert("removed preload class");
+  $('#work').removeClass("preload");*/
+});
+
+$( document ).ready(function() {
+  $('#work').removeClass("preload");
+  // alert("message 1");
+>>>>>>> caf25af9f302664a5d98775ecb05a3c05bc5901a
 
   // nav tab color
   var tabs = ["index.html", "people.html", "work.html", "hobbies.html", "about.html"];
@@ -20,11 +32,24 @@ $( document ).ready(function() {
 
 
   // mobile nav slider
+<<<<<<< HEAD
+=======
+  // $('#simple-menu').sidr();
+
+>>>>>>> caf25af9f302664a5d98775ecb05a3c05bc5901a
   $('#simple-menu').sidr({
     name: 'sidr-right',
     side: 'right'
   });
 
+<<<<<<< HEAD
+=======
+  /*$('#existing-content-menu').sidr({
+    name: 'sidr-existing-content',
+    source: '#demoheader, #demo-content'
+  });
+*/
+>>>>>>> caf25af9f302664a5d98775ecb05a3c05bc5901a
 
 	$(".smash_slide").hover(function(){
        $(".smash_icon").show();
