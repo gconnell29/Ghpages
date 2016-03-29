@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gordon - Contact</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet">
+		<link href="css/jquery.sidr.bare.css" rel="stylesheet">
+		<link href="css/jquery.sidr.dark.css" rel="stylesheet">
+		<link href="css/jquery.sidr.dark.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="header"></div>
+
+		<div class="page-wrap">
+			<section id="contact" class="">
+				<div class="heading">contact me</div>
+
+				<div class="container">
+					<p>Let's be friends! If you want to be friends with me, simply fill out the form below with your information. It's that easy!</p>
+
+					<form action"#" method="post" name="friends" id="friendForm">
+						<label>First Name</label>
+						<input type="text" name="fName" id="fName" required></input>
+						<label>Last name</label>
+						<input type="text" name="lName" id="lName" required></input>
+						<label>Email</label>
+						<input type="email" name="email" id="email" required></input>
+						<label>Alias</label>
+						<input type="text" name="alias" id="alias" required></input>
+						<input type="submit" name="btnSubmit" id="btnSubmit" value="Register" onclick="register()"></input>
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<div id="footer"></div>
+
+		<script src="scripts/jquery-2.2.0.js" type=""></script>
+		<script src="scripts/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
+
+	</body>
+</html>
