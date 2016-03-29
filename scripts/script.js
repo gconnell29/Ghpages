@@ -1,5 +1,3 @@
-$( document ).ready(function() {
-  $('#work').removeClass("preload");
 // remove preload to allow css transitinos to fire
 $( window ).load(function() {
   /*alert("removed preload class");
@@ -42,16 +40,16 @@ $( document ).ready(function() {
   });
 */
 
-	$(".smash_slide").hover(function(){
+  $(".smash_slide").hover(function(){
        $(".smash_icon").show();
        $(".smash_icon").animate({
-       	'margin-left': '100%'
+        'margin-left': '100%'
        });
        $(".left_red_arrow").show();
        $(".left_arrow").hide();
     }, function(){
        $(".smash_icon").animate({
-       	'margin-left': '0'
+        'margin-left': '0'
        });
        $(".left_red_arrow").hide();
        $(".left_arrow").show();
@@ -62,17 +60,17 @@ $( document ).ready(function() {
     $(".skate_slide").hover(function(){
        $(".skate_icon").show();
        $(".skate_icon").animate({
-       	'margin-left': '-100%'
+        'margin-left': '-100%'
        });
        $(".right_arrow").hide();      
        $(".right_red_arrow").show();      
     }, function(){
-    	$(".skate_icon").animate({
-    		'margin-left': '0'
-    	});
+      $(".skate_icon").animate({
+        'margin-left': '0'
+      });
       $(".right_arrow").show();       
        $(".right_red_arrow").hide();      
-    	$(".skate_icon").hide(500);
+      $(".skate_icon").hide(500);
     });
 
 
@@ -134,4 +132,3 @@ $( document ).ready(function() {
     });
 
 });
-
