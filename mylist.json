@@ -1,0 +1,8 @@
+{
+	"u1": {"user":"John", "age":22, "country":"USA"},
+	"u2": {"user":"Will", "age":30, "country":"Canada"},
+	"u3": {"user":"Sue", "age":45, "country":"Japan"},
+	"u4": {"user":"John", "age":22, "country":"USA"},
+	"u5": {"user":"Will", "age":30, "country":"Canada"},
+	"u6": {"user":"Sue", "age":45, "country":"Japan"}
+}

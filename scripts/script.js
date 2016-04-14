@@ -1,15 +1,26 @@
-// remove preload to allow css transitinos to fire
-$( window ).load(function() {
-  /*alert("removed preload class");
-  $('#work').removeClass("preload");*/
-});
+function register() {
+  // var input = document.getElementsByTagName('input');
+  var fName = document.getElementById('fName');
+  var lName = document.getElementById('lName');
+  var email = document.getElementById('email');
+  var alias = document.getElementById('alias');
+
+  // alert(fName.value)
+  if (fName.value.length == 0 || lName.value.length == 0 || email.value.length == 0 || alias.value.length == 0) {
+    alert('please fill out the entire form');
+    // alert(fName.value);
+  } else {
+    var newFriend = {fName:'fName.value', lName:'lName.value', email:'email.value', alias:'alias.value'}
+    alert('you have been registered');
+  }
+}
+
 
 $( document ).ready(function() {
   $('#work').removeClass("preload");
-  // alert("message 1");
 
   // nav tab color
-  var tabs = ["index.html", "people.html", "work.html", "hobbies.html", "about.html"];
+  var tabs = ["index.html", "people.html", "work.html", "hobbies.html", "about.html", "contact.html"];
 
   if (window.location.pathname == "/gordon/" + tabs[1]) {
     $(".people_tab").addClass("active");
@@ -23,33 +34,26 @@ $( document ).ready(function() {
     $(".about_tab").addClass("active");
   } else if (window.location.pathname == "/gordon/" + tabs[4] + "#skate") {
     $(".about_tab").addClass("active");
+  } else if (window.location.pathname == "/gordon/" + tabs[5]) {
+    $(".contact_tab").addClass("active");
   };
 
-
-  // mobile nav slider
-  // $('#simple-menu').sidr();
 
   $('#simple-menu').sidr({
     name: 'sidr-right',
     side: 'right'
   });
 
-  /*$('#existing-content-menu').sidr({
-    name: 'sidr-existing-content',
-    source: '#demoheader, #demo-content'
-  });
-*/
-
-	$(".smash_slide").hover(function(){
+  $(".smash_slide").hover(function(){
        $(".smash_icon").show();
        $(".smash_icon").animate({
-       	'margin-left': '100%'
+        'margin-left': '100%'
        });
        $(".left_red_arrow").show();
        $(".left_arrow").hide();
     }, function(){
        $(".smash_icon").animate({
-       	'margin-left': '0'
+        'margin-left': '0'
        });
        $(".left_red_arrow").hide();
        $(".left_arrow").show();
@@ -60,17 +64,17 @@ $( document ).ready(function() {
     $(".skate_slide").hover(function(){
        $(".skate_icon").show();
        $(".skate_icon").animate({
-       	'margin-left': '-100%'
+        'margin-left': '-100%'
        });
        $(".right_arrow").hide();      
        $(".right_red_arrow").show();      
     }, function(){
-    	$(".skate_icon").animate({
-    		'margin-left': '0'
-    	});
+      $(".skate_icon").animate({
+        'margin-left': '0'
+      });
       $(".right_arrow").show();       
        $(".right_red_arrow").hide();      
-    	$(".skate_icon").hide(500);
+      $(".skate_icon").hide(500);
     });
 
 
@@ -110,26 +114,32 @@ $( document ).ready(function() {
     };
 
 
+    // HOBBIES PAGE
+    $('.show_video').click(function() {
+      $('.video_container').show();
+    });
+
+
     // ABOUT PAGE
     // slider
       $("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      stopOnHover: true,
-      pagination: false,
-      navigationText: ["<img src='images/owl-prev.png' />","<img src='images/owl-next.png' />"]
-      // autoPlay: 1000
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-    });
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        stopOnHover: true,
+        pagination: false,
+        navigationText: ["<img src='images/owl-prev.png' />","<img src='images/owl-next.png' />"]
+        // autoPlay: 1000
+   
+        // "singleItem:true" is a shortcut for:
+        // items : 1, 
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+      });
+
+
 
 });
-
