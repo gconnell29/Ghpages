@@ -17,26 +17,12 @@ html, body {
 }
 
 .page-wrap {
-  /*min-height: calc(100% - 70px);*/
- /*equal to footer height*/
-  /*margin-bottom: -70px; */
   background: #fff;
 }
-
-/*.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-}
-.site-footer {
-  height: 70px;
-}*/
 
 body,ul, p {
 	margin: 0;
 	padding: 0;
-	/*background-color: rgb(222, 222, 222);*/
 }
 
 a {
@@ -150,12 +136,6 @@ footer .media_icons {
 	right: 0;
 }
 
-.media_icons p {
-	margin-bottom: 15px;
-	font-size: 20px;
-	text-align: center;
-}
-
 .media_icons li {
 	display: inline-block;
 	padding-left: 20px;
@@ -163,8 +143,12 @@ footer .media_icons {
 
 .media_icons img {
 	width: 30px;
+	transition: .5s;
 }
 
+.media_icons img:hover {
+	opacity: .5;
+}
 
 /*START HOME PAGE*/
 .pages {
