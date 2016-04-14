@@ -139,14 +139,14 @@ footer .media_icons {
 .media_icons li {
 	display: inline-block;
 	padding-left: 20px;
+	transition: .5s;
 }
 
 .media_icons img {
 	width: 30px;
-	transition: .5s;
 }
 
-.media_icons img:hover {
+.media_icons li:hover {
 	opacity: .5;
 }
 
