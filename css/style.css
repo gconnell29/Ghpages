@@ -579,16 +579,43 @@ footer .media_icons {
 /*START CONTACT PAGE*/
 #contact .container p {
 	text-align: center;
-}
-
-#contact form {
-	margin: 20px 0;
-}
-
-#contact form input
- {
-	display: block;
 	margin-bottom: 20px;
+}
+
+#friendForm {
+	display: inline-block;
+	width: 65%;
+	vertical-align: top;
+	position: relative;
+}
+
+#friendForm div {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 8%;
+	width: 41%;
+}
+
+#friendForm label {
+	display: block;
+}
+
+#friendForm div input {
+	height: 20px;
+	width: 100%;
+}
+
+#friendForm .register {
+	display: block;
+	font-size: 20px;
+	padding: 5px;
+	margin: 30px auto;
+	width: 200px;
+}
+
+#contact img {
+	display: inline-block;
+	width: 30%;
 }
 /*END CONTACT PAGE ----------------- */
 
