@@ -116,7 +116,15 @@ $( document ).ready(function() {
 
     // HOBBIES PAGE
     $('.show_video').click(function() {
-      $('.video_container').show();
+      $('.video_container').show(1000);
+      $('.hide_video').show();
+      $('.show_video').hide();
+    });
+
+    $('.hide_video').click(function() {
+      $('.video_container').hide(1000);
+      $('.show_video').show();
+      $('.hide_video').hide();
     });
 
 
