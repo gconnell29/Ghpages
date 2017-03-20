@@ -69,7 +69,8 @@ header #sidr-right {
 }
 
 #standard_nav li a:hover {
-	color: #add8e6;
+	/*color: #add8e6;*/
+	opacity: .7;
 	transition-duration: .5s;
 }
 
@@ -447,6 +448,12 @@ footer .media_icons {
 #hobbies .sub_heading {padding: 30px 0;margin: 0;font-size: 40px;text-align: center;}
 
 .show_video {
+	color: #000099;
+	cursor: pointer;
+}
+
+.hide_video {
+	display: none;
 	color: #000099;
 	cursor: pointer;
 }
